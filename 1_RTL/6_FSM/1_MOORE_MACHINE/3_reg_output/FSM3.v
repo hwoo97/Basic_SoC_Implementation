@@ -49,4 +49,18 @@ always @(state, go , ws) begin
 	endcase
 end
 
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n) begin
+		rd <= 1'b0;
+		ds <= 1'b0;
+	end
+	else begin
+		case(next)
+			READ	: rd <= 1'b1;
+			DLY	: rd <= 1'b1;
+			DONE	: ds <= 1'b1;
+		endcase
+	end
+end
+
 endmodule
