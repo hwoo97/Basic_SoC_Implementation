@@ -1,0 +1,120 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[00:10:03.163105] Configured Lic search path (22.01-s003): 5280@172.31.52.241
+
+Version: 22.17-s071_1, built Wed Sep 11 20:37:05 PDT 2024
+Options: 
+Date:    Wed Jul 08 00:10:03 2026
+Host:    kopo-seongnam (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (20cores*80cpus*2physical cpus*Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz 28160KB) (394624392KB)
+PID:     128872
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+[00:10:03.191345] Periodic Lic check successful
+[00:10:03.191353] Feature usage summary:
+[00:10:03.191353] Genus_Synthesis
+
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (0 seconds elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (16 seconds elapsed).
+
+WARNING: This version of the tool is 663 days old.
+@genus:root: 1> gui_raise
+@genus:root: 2> gui_hide
+@genus:root: 3> set_db init_lib_serch_path
+Error   : A required argument was not specified. [TUI-202] [set_db]
+        : An argument of type '<string>' was not specified.
+        : Rerun the command specifying all required arguments.
+  set_db: set attributes on objects 
+
+Usage: set_db [-quiet] [-verbose] [-dbu] [-index <string>] <string> <string> [<string>]
+
+    [-quiet]:
+        keeps quiet unless there are problems 
+    [-verbose]:
+        enables verbose 
+    [-dbu]:
+        indicates that attribute (coord, pt, rect, polygon, area, etc.) will be in database units 
+    [-index <string>]:
+        list of indices in a form of pairs of index_name value or a object name 
+    <string>:
+        <start> can be any object list (or collection) or <shorthand> (e.g., nets, insts, etc) 
+    <string>:
+        the <chain> is in the form [.<attribute_name1>[.<attribute_name2>]...] 
+    [<string>]:
+        the attribute value 
+1
+@genus:root: 4> set_db init_lib_serch_path ../../1_LIB
+Error   : <Start> word is not recognized. [TUI-182] [set_db]
+        : 'init_lib_serch_path' is not a recognized object/attribute. Type 'help root:' to get a list of all supported objects and attributes.
+        : Check if the given <Start> word is a valid object_type, object or attribute.
+1
+@genus:root: 5> set_db init_lib_search_path ../../1_LIB
+  Setting attribute of root '/': 'init_lib_search_path' = ../../1_LIB
+1 ../../1_LIB
+@genus:root: 6> set_db init_hdl_search_path ../../4_SAMPLE_RTL
+  Setting attribute of root '/': 'init_hdl_search_path' = ../../4_SAMPLE_RTL
+1 ../../4_SAMPLE_RTL
+@genus:root: 7> read_libs slow_vdd1v0_basicCells.lib
+Error   : File error. [FILE-100] [::legacy::set_attribute]
+        : Cannot open file 'slow_vdd1v0_basicCells.lib'
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : A library file does not exist. [LBR-68] [::legacy::set_attribute]
+        : File 'slow_vdd1v0_basicCells.lib' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [::legacy::set_attribute]
+        : The value '  { slow_vdd1v0_basicCells.lib } ' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+1
+@genus:root: 8> read_libs slow_vdd1v0_basicCells.lib
+Error   : File error. [FILE-100] [::legacy::set_attribute]
+        : Cannot open file 'slow_vdd1v0_basicCells.lib'
+Error   : A library file does not exist. [LBR-68] [::legacy::set_attribute]
+        : File 'slow_vdd1v0_basicCells.lib' could not be found. File '<none>' was the last file that was successfully read in.
+Error   : The data value for this attribute is invalid. [TUI-24] [::legacy::set_attribute]
+        : The value '  { slow_vdd1v0_basicCells.lib } ' cannot be set for attribute 'library'.
+1
+@genus:root: 9> pwm
+invalid command name "pwm"
+@genus:root: 10> 
+@genus:root: 10> 
+@genus:root: 10> 
+@genus:root: 10> 
+@genus:root: 10> 
+@genus:root: 10> 
+@genus:root: 10> 
+@genus:root: 10> 
+@genus:root: 10> 
+@genus:root: 10> set_db init_lib_search_path ../../1_LIB
+  Setting attribute of root '/': 'init_lib_search_path' = ../../1_LIB
+1 ../../1_LIB
+@genus:root: 11> set_db init_hdl_search_path ../../4_SAMPLE_RTL
+  Setting attribute of root '/': 'init_hdl_search_path' = ../../4_SAMPLE_RTL
+1 ../../4_SAMPLE_RTL
+@genus:root: 12> read_libs slow_vdd1v0_basicCells.lib
+Error   : File error. [FILE-100] [::legacy::set_attribute]
+        : Cannot open file 'slow_vdd1v0_basicCells.lib'
+Error   : A library file does not exist. [LBR-68] [::legacy::set_attribute]
+        : File 'slow_vdd1v0_basicCells.lib' could not be found. File '<none>' was the last file that was successfully read in.
+Error   : The data value for this attribute is invalid. [TUI-24] [::legacy::set_attribute]
+        : The value '  { slow_vdd1v0_basicCells.lib } ' cannot be set for attribute 'library'.
+1
+@genus:root: 13> exit
+
+Lic Summary:
+[00:29:30.133858] Cdslmd servers: kopo-seongnam
+[00:29:30.133888] Feature usage summary:
+[00:29:30.133890] Genus_Synthesis
+
+Normal exit.
