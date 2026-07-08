@@ -1,0 +1,183 @@
+[07/09 04:28:17      0s] 
+[07/09 04:28:17      0s] Cadence Innovus(TM) Implementation System.
+[07/09 04:28:17      0s] Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+[07/09 04:28:17      0s] 
+[07/09 04:28:17      0s] Version:	v22.17-s086_1, built Tue Sep 24 10:51:50 PDT 2024
+[07/09 04:28:17      0s] Options:	
+[07/09 04:28:17      0s] Date:		Thu Jul  9 04:28:17 2026
+[07/09 04:28:17      0s] Host:		kopo-seongnam (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (20cores*80cpus*Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz 28160KB)
+[07/09 04:28:18      0s] OS:		CentOS Linux 7 (Core)
+[07/09 04:28:18      0s] 
+[07/09 04:28:18      0s] License:
+[07/09 04:28:18      0s] 		[04:28:18.158649] Configured Lic search path (22.01-s003): 5280@localhost
+
+[07/09 04:28:18      0s] 		invs	Innovus Implementation System	22.1	Denied
+[07/09 04:28:18      0s] 		invsb	Innovus Implementation System Basic	22.1	checkout succeeded
+[07/09 04:28:18      0s] 		4 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[07/09 04:28:38     19s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v22.17-s086_1 (64bit) 09/24/2024 10:51 (Linux 3.10.0-693.el7.x86_64)
+[07/09 04:28:41     21s] @(#)CDS: NanoRoute 22.17-s086_1 NR240905-1647/22_17-UB (database version 18.20.629) {superthreading v2.20}
+[07/09 04:28:41     21s] @(#)CDS: AAE 22.17-s013 (64bit) 09/24/2024 (Linux 3.10.0-693.el7.x86_64)
+[07/09 04:28:41     21s] @(#)CDS: CTE 22.17-s017_1 () Sep 12 2024 04:53:54 ( )
+[07/09 04:28:41     21s] @(#)CDS: SYNTECH 22.17-s006_1 () Aug 12 2024 03:52:27 ( )
+[07/09 04:28:41     21s] @(#)CDS: CPE v22.17-s051
+[07/09 04:28:41     21s] @(#)CDS: IQuantus/TQuantus 21.2.2-s369 (64bit) Tue May 7 14:30:42 PDT 2024 (Linux 3.10.0-693.el7.x86_64)
+[07/09 04:28:41     21s] @(#)CDS: OA 22.60-p095 Wed Apr 17 03:30:14 2024
+[07/09 04:28:41     21s] @(#)CDS: SGN 22.20-d001 (02-Jan-2023) (64 bit executable, TkQt5.9.1)
+[07/09 04:28:41     21s] @(#)CDS: RCDB 11.15.0
+[07/09 04:28:41     21s] @(#)CDS: STYLUS 22.15-s003_1 (04/04/2024 05:58 PDT)
+[07/09 04:28:41     21s] @(#)CDS: IntegrityPlanner-22.17-15746 (22.17) (2024-07-03 11:16:10+0800)
+[07/09 04:28:41     21s] Create and set the environment variable TMPDIR to /home/hah015/Basic_SoC_Implementation/5_APR/7_APR/2_TINY_PROJECT/1_UP_DOWN_COUNTER/innovus_temp_301692_9e67788d-2049-4d87-998b-47a0fbb67ab8_kopo-seongnam_hah015_T8TKBH.
+
+[07/09 04:28:41     21s] Change the soft stacksize limit to 0.2%RAM (770 mbytes). Set global soft_stack_size_limit to change the value.
+[07/09 04:28:43     23s] 
+[07/09 04:28:43     23s] **INFO:  MMMC transition support version v31-84 
+[07/09 04:28:43     23s] 
+[07/09 04:28:43     23s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[07/09 04:28:43     23s] <CMD> suppressMessage ENCEXT-2799
+[07/09 04:28:43     23s] <CMD> win
+[07/09 04:28:43     23s] <CMD> set enc_check_rename_command_name 1
+[07/09 04:34:06    156s] <CMD> set init_gnd_net VSS
+[07/09 04:34:06    156s] <CMD> set init_lef_file {../../../3_LEF/gsclib045_tech.lef ../../../3_LEF/gsclib045_macro.lef}
+[07/09 04:34:06    156s] <CMD> set init_design_settop 0
+[07/09 04:34:06    156s] <CMD> set init_verilog ../../../6_GLN/2_TINY_PROJECT/1_UP_DOWN_COUNTER/updown_counter_netlist.v
+[07/09 04:34:06    156s] <CMD> set init_mmmc_file sample.view
+[07/09 04:34:06    156s] <CMD> set init_pwr_net VDD
+[07/09 04:34:06    156s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> init_design
+[07/09 04:34:06    156s] #% Begin Load MMMC data ... (date=07/09 04:34:06, mem=1359.7M)
+[07/09 04:34:06    156s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> set init_gnd_net VSS
+[07/09 04:34:14    157s] <CMD> set init_lef_file {../../../3_LEF/gsclib045_tech.lef ../../../3_LEF/gsclib045_macro.lef}
+[07/09 04:34:14    157s] <CMD> set init_design_settop 0
+[07/09 04:34:14    157s] <CMD> set init_verilog ../../../6_GLN/2_TINY_PROJECT/1_UP_DOWN_COUNTER/updown_counter_netlist.v
+[07/09 04:34:14    157s] <CMD> set init_mmmc_file sample.view
+[07/09 04:34:14    157s] <CMD> set init_pwr_net VDD
+[07/09 04:34:14    157s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> init_design
+[07/09 04:34:14    157s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[07/09 04:34:14    157s] % Begin Load MMMC data ... (date=07/09 04:34:14, mem=1359.9M)
+[07/09 04:34:14    157s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> set init_gnd_net VSS
+[07/09 04:34:24    158s] <CMD> set init_lef_file {../../../3_LEF/gsclib045_tech.lef ../../../3_LEF/gsclib045_macro.lef}
+[07/09 04:34:24    158s] <CMD> set init_design_settop 0
+[07/09 04:34:24    158s] <CMD> set init_verilog ../../../6_GLN/2_TINY_PROJECT/1_UP_DOWN_COUNTER/updown_counter_netlist.v
+[07/09 04:34:24    158s] <CMD> set init_mmmc_file sample.view
+[07/09 04:34:24    158s] <CMD> set init_pwr_net VDD
+[07/09 04:34:24    158s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> init_design
+[07/09 04:34:24    158s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[07/09 04:34:24    158s] % Begin Load MMMC data ... (date=07/09 04:34:24, mem=1360.0M)
+[07/09 04:34:24    158s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> set init_gnd_net VSS
+[07/09 04:34:24    158s] <CMD> set init_lef_file {../../../3_LEF/gsclib045_tech.lef ../../../3_LEF/gsclib045_macro.lef}
+[07/09 04:34:24    158s] <CMD> set init_design_settop 0
+[07/09 04:34:24    158s] <CMD> set init_verilog ../../../6_GLN/2_TINY_PROJECT/1_UP_DOWN_COUNTER/updown_counter_netlist.v
+[07/09 04:34:24    158s] <CMD> set init_mmmc_file sample.view
+[07/09 04:34:24    158s] <CMD> set init_pwr_net VDD
+[07/09 04:34:24    158s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> init_design
+[07/09 04:34:24    158s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[07/09 04:34:24    158s] % Begin Load MMMC data ... (date=07/09 04:34:24, mem=1360.0M)
+[07/09 04:34:24    158s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> set init_gnd_net VSS
+[07/09 04:34:24    158s] <CMD> set init_lef_file {../../../3_LEF/gsclib045_tech.lef ../../../3_LEF/gsclib045_macro.lef}
+[07/09 04:34:24    158s] <CMD> set init_design_settop 0
+[07/09 04:34:24    158s] <CMD> set init_verilog ../../../6_GLN/2_TINY_PROJECT/1_UP_DOWN_COUNTER/updown_counter_netlist.v
+[07/09 04:34:24    158s] <CMD> set init_mmmc_file sample.view
+[07/09 04:34:24    158s] <CMD> set init_pwr_net VDD
+[07/09 04:34:24    158s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> init_design
+[07/09 04:34:24    158s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[07/09 04:34:24    158s] % Begin Load MMMC data ... (date=07/09 04:34:24, mem=1360.0M)
+[07/09 04:34:24    158s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> set init_gnd_net VSS
+[07/09 04:34:24    158s] <CMD> set init_lef_file {../../../3_LEF/gsclib045_tech.lef ../../../3_LEF/gsclib045_macro.lef}
+[07/09 04:34:24    158s] <CMD> set init_design_settop 0
+[07/09 04:34:24    158s] <CMD> set init_verilog ../../../6_GLN/2_TINY_PROJECT/1_UP_DOWN_COUNTER/updown_counter_netlist.v
+[07/09 04:34:24    158s] <CMD> set init_mmmc_file sample.view
+[07/09 04:34:24    158s] <CMD> set init_pwr_net VDD
+[07/09 04:34:24    158s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> init_design
+[07/09 04:34:24    158s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[07/09 04:34:24    159s] % Begin Load MMMC data ... (date=07/09 04:34:24, mem=1360.0M)
+[07/09 04:34:24    159s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> zoomBox -0.05600 -0.03900 0.15900 0.15300
+[07/09 04:34:27    159s] <CMD> fit
+[07/09 04:34:28    159s] <CMD> fit
+[07/09 04:34:28    159s] <CMD> fit
+[07/09 04:34:28    159s] <CMD> fit
+[07/09 04:34:28    159s] <CMD> zoomBox -0.07400 -0.05300 0.17900 0.17300
+[07/09 04:34:28    159s] <CMD> fit
+[07/09 04:34:41    160s] <CMD> set init_gnd_net VSS
+[07/09 04:34:41    160s] <CMD> set init_lef_file {../../../3_LEF/gsclib045_tech.lef ../../../3_LEF/gsclib045_macro.lef}
+[07/09 04:34:41    160s] <CMD> set init_design_settop 0
+[07/09 04:34:41    160s] <CMD> set init_verilog ../../../6_GLN/2_TINY_PROJECT/1_UP_DOWN_COUNTER/updown_counter_netlist.v
+[07/09 04:34:41    160s] <CMD> set init_mmmc_file sample.view
+[07/09 04:34:41    160s] <CMD> set init_pwr_net VDD
+[07/09 04:34:41    160s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> init_design
+[07/09 04:34:41    160s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[07/09 04:34:41    160s] % Begin Load MMMC data ... (date=07/09 04:34:41, mem=1360.0M)
+[07/09 04:34:41    160s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> set init_gnd_net VSS
+[07/09 04:35:18    172s] <CMD> set init_lef_file {../../../3_LEF/gsclib045_tech.lef ../../../3_LEF/gsclib045_macro.lef}
+[07/09 04:35:18    172s] <CMD> set init_design_settop 0
+[07/09 04:35:18    172s] <CMD> set init_verilog ../../../6_GLN/2_TINY_PROJECT/1_UP_DOWN_COUNTER/updown_counter_netlist.v
+[07/09 04:35:18    172s] <CMD> set init_pwr_net VDD
+[07/09 04:35:18    172s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> init_design
+[07/09 04:35:18    172s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[07/09 04:35:18    172s] % Begin Load MMMC data ... (date=07/09 04:35:18, mem=1361.1M)
+[07/09 04:35:18    172s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> set init_gnd_net VSS
+[07/09 04:35:19    172s] <CMD> set init_lef_file {../../../3_LEF/gsclib045_tech.lef ../../../3_LEF/gsclib045_macro.lef}
+[07/09 04:35:19    172s] <CMD> set init_design_settop 0
+[07/09 04:35:19    172s] <CMD> set init_verilog ../../../6_GLN/2_TINY_PROJECT/1_UP_DOWN_COUNTER/updown_counter_netlist.v
+[07/09 04:35:19    172s] <CMD> set init_pwr_net VDD
+[07/09 04:35:19    172s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> init_design
+[07/09 04:35:19    172s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[07/09 04:35:19    172s] % Begin Load MMMC data ... (date=07/09 04:35:19, mem=1361.1M)
+[07/09 04:35:19    172s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> set init_gnd_net VSS
+[07/09 04:35:19    172s] <CMD> set init_lef_file {../../../3_LEF/gsclib045_tech.lef ../../../3_LEF/gsclib045_macro.lef}
+[07/09 04:35:19    172s] <CMD> set init_design_settop 0
+[07/09 04:35:19    172s] <CMD> set init_verilog ../../../6_GLN/2_TINY_PROJECT/1_UP_DOWN_COUNTER/updown_counter_netlist.v
+[07/09 04:35:19    172s] <CMD> set init_pwr_net VDD
+[07/09 04:35:19    172s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> init_design
+[07/09 04:35:19    172s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[07/09 04:35:19    172s] % Begin Load MMMC data ... (date=07/09 04:35:19, mem=1361.1M)
+[07/09 04:35:19    172s] **ERROR: (TCLCMD-992):	Mixed usage of library_set (MMMC-1) and timing_condition (MMMC-2) in delay_corner is not allowed. You should use either MMMC-1 or MMMC-2 to configure the MMMC specification.
+<CMD> set init_gnd_net VSS
+[07/09 04:35:19    172s] <CMD> set init_lef_file {../../../3_LEF/gsclib045_tech.lef ../../../3_LEF/gsclib045_macro.lef}
+[07/09 04:35:19    172s] <CMD> set init_design_settop 0
+[07/09 04:35:19    172s] <CMD> set init_verilog ../../../6_GLN/2_TINY_PROJECT/1_UP_DOWN_COUNTER/updown_counter_netlist.v
+[07/09 04:35:19    172s] <CMD> set init_pwr_net VDD
+[07/09 04:35:19    172s] <CMD> init_design
+[07/09 04:35:19    172s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[07/09 04:35:19    172s] % Begin Load MMMC data ... (date=07/09 04:35:19, mem=1361.1M)
+[07/09 04:35:19    172s] <CMD> set init_gnd_net VSS
+[07/09 04:35:19    172s] <CMD> set init_lef_file {../../../3_LEF/gsclib045_tech.lef ../../../3_LEF/gsclib045_macro.lef}
+[07/09 04:35:19    172s] <CMD> set init_design_settop 0
+[07/09 04:35:19    172s] <CMD> set init_verilog ../../../6_GLN/2_TINY_PROJECT/1_UP_DOWN_COUNTER/updown_counter_netlist.v
+[07/09 04:35:19    172s] <CMD> set init_pwr_net VDD
+[07/09 04:35:19    172s] <CMD> init_design
+[07/09 04:35:19    172s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[07/09 04:35:19    172s] % Begin Load MMMC data ... (date=07/09 04:35:19, mem=1361.1M)
+[07/09 04:35:22    173s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu Jul  9 04:35:22 2026
+  Total CPU time:     0:02:53
+  Total real time:    0:07:06
+  Peak memory (main): 1368.61MB
+
+[07/09 04:35:22    173s] 
+[07/09 04:35:22    173s] *** Memory Usage v#1 (Current mem = 1628.156M, initial mem = 646.371M) ***
+[07/09 04:35:22    173s] 
+[07/09 04:35:22    173s] *** Summary of all messages that are not suppressed in this session:
+[07/09 04:35:22    173s] Severity  ID               Count  Summary                                  
+[07/09 04:35:22    173s] ERROR     TCLCMD-992          24  %s                                       
+[07/09 04:35:22    173s] *** Message Summary: 0 warning(s), 20 error(s)
+[07/09 04:35:22    173s] 
+[07/09 04:35:22    173s] --- Ending "Innovus" (totcpu=0:02:53, real=0:07:05, mem=1628.2M) ---

@@ -1,0 +1,23 @@
+set_db init_lib_search_path ../../../1_LIB
+set_db init_hdl_search_path ../../../../1_RTL/2_TINY_PROJECT/1_UP_DOWN_COUNTER
+read_libs slow_vdd1v0_basicCells.lib
+read_hdl updown_counter.v
+
+elaborate
+
+read_sdc ../../../2_CONSTRAINTS/sample.sdc
+set_db syn_generic_effort medium
+set_db syn_map_effort medium
+set_db syn_opt_effort medium
+
+syn_generic
+syn_map
+syn_opt
+
+report_timing > ./reports/rpt_timing.rpt
+report_power > ./reports/rpt_power.rpt
+report_area > ./reports/rpt_area.rpt
+report_qor > ./reports/rpt_qor.rpt
+
+write_hdl > ./outputs/updown_counter_netlist.v
+write_sdc > ./outputs/updown_counter_final.sdc
